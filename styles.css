@@ -1,0 +1,64 @@
+@media (max-width: 767px) {
+    .drum-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  }
+  
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .drum-set {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .drum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.07s;
+  }
+
+  .drum:active,
+  .drum:focus,
+  .drum.playing {
+    background-color: #ffc600;
+    transform: scale(1.2);
+  }
+
+  .drum:active {
+    background-color: #ffc600;
+    transition: background-color 0s;
+  }
+  
+  .drum:hover {
+    background-color: #aaa;
+  }
+  
+  kbd {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .sound {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .playing {
+    background-color: #ffdd57;
+  }
+
+  
